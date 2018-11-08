@@ -28,7 +28,7 @@ pytest --cov-report xml --cov-report term --cov ./lib/'''
       }
       steps {
         input 'Can we deploy?'
-        sh '''cd deployment.sh
+        sh '''cd deployment
 sh provision.sh'''
       }
     }
